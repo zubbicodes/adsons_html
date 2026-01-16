@@ -1,0 +1,34 @@
+
+/* Set the background of the carousel to brand blue to prevent white/black flashes */
+.carousel-inner {
+  background-color: #1D4ED8;
+}
+
+/* 
+   Smoother Fade Transition 
+   - Uses linear easing for a more constant fade
+   - Keeps the active slide visible while the next one fades in
+*/
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1.5s;
+  transition-timing-function: linear;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-start,
+.carousel-fade .carousel-item-prev.carousel-item-end {
+  z-index: 1;
+  opacity: 1;
+}
+
+/* Ensure the outgoing slide doesn't disappear prematurely */
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0s 1.5s; /* Delay hiding the outgoing slide until transition is done? No, standard bootstrap fade works by cross-fading. 
+                                   To avoid blink, we need to ensure the background is solid (handled above) 
+                                   or modify how they stack. */
+}
