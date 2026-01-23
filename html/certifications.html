@@ -14,15 +14,15 @@
 <body>
 
   <!-- Header -->
-  <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+  <header class="header header-light-page border-4 border-primary border-top position-fixed start-0 top-0 w-100">
     <div class="container">
       <div class="header-wrapper d-flex align-items-center justify-content-between">
         <div class="logo">
           <a href="index.html" class="logo-white">
-            <img src="../assets/images/logos/logo-white.svg" alt="logo" class="img-fluid">
+            <img src="../assets/images/logos/logo_blue.png" alt="logo" class="img-fluid">
           </a>
           <a href="index.html" class="logo-dark">
-            <img src="../assets/images/logos/logo-dark.svg" alt="logo" class="img-fluid">
+            <img src="../assets/images/logos/logo_light.png" alt="logo" class="img-fluid">
           </a>
         </div>
         <div class="d-flex align-items-center gap-4">
@@ -47,10 +47,17 @@
                           class="img-fluid animate-spin">Home</a>
                     </li>
                     <li class="header-item">
-                      <a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                      <a href="about.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
                           src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
                           class="img-fluid animate-spin">About</a>
                     </li>
+
+                    <li class="header-item">
+                      <a href="certifications.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Certifications</a>
+                    </li>
+
                     <li class="header-item">
                       <a href="projects.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
                           src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
@@ -100,11 +107,18 @@
   </header>
 
   <!--  Page Wrapper -->
-  <div class="page-wrapper overflow-hidden">
+  <div class="page-wrapper overflow-hidden bg-white">
 
-    <!--  Banner Section -->
+    <!-- Certifications Hero -->
+    <!-- <section class="cert-hero text-center py-5 pt-xl-10">
+        <div class="container">
+            <h1 class="text-dark display-4 fw-bold mb-3" data-aos="fade-up">Our Certifications</h1>
+            <p class="text-muted lead mx-auto mb-5" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="100">Validating our commitment to quality, sustainability, and ethical practices</p>
+        </div>
+    </section> -->
+
     <section class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end"
-      style="background-image: url(../assets/images/backgrounds/blog-banner.jpg);">
+      style="background-image: url(../assets/images/about/image.png);">
       <div class="container">
         <div class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1">
           <div class="row align-items-center">
@@ -112,13 +126,12 @@
               <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100"
                 data-aos-duration="1000">
                 <img src="../assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin">
-                <p class="mb-0 text-white fs-5 text-opacity-70">Excited to <span class="text-primary">begin something
-                    amazing?</span>Get in touch—we'd love to connect with you!</p>
+                <p class="mb-0 text-white fs-5 text-opacity-70">Validating our commitment to quality, sustainability, and ethical practices</p>
               </div>
             </div>
           </div>
           <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-            <h1 class="mb-0 fs-16 text-white lh-1">Blog</h1>
+            <h1 class="mb-0 fs-16 text-white lh-1">Our Certifications</h1>
             <a href="javascript:void(0)" class="p-1 ps-7 bg-primary rounded-pill">
               <span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center">
                 <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
@@ -129,64 +142,154 @@
       </div>
     </section>
 
-    <!--  Blog Section -->
-    <section class="blog-section py-5 py-lg-11 py-xl-12">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-7">
-            <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
-              data-aos-duration="1000">
-              <a href="blog-detail.html"
-                class="resources-img resources-img-blog position-relative overflow-hidden d-block">
-                <img src="../assets/images/resources/resources-1.jpg" alt="resources" class="img-fluid">
-              </a>
-              <div class="resources-details">
-                <p class="mb-0">Dec 24, 2025</p>
-                <h4 class="mb-0">A campaign that connects</h4>
-              </div>
+    <!-- Certifications List -->
+    <section class="cert-list pb-5">
+        <div class="container">
+            <div class="d-flex flex-column gap-4">
+                <!-- Card 1: OEKO-TEX STANDARD 100 -->
+                <div class="cert-card p-4 p-lg-5" data-aos="fade-up" data-aos-delay="200">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="cert-logo-wrapper bg-white p-3 rounded-3 d-flex align-items-center justify-content-center mx-auto">
+                                <img src="../assets/images/certificates/oekotex.jpg" alt="OEKO-TEX STANDARD 100" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="cert-content text-dark">
+                                <h3 class="fw-bold mb-2">OEKO-TEX STANDARD 100</h3>
+                                <p class="text-muted mb-2">Certified for safe and sustainable textile production</p>
+                                <p class="text-muted mb-4 opacity-75">This certification ensures that our textile products are free from harmful substances and meet the highest standards of human-ecological safety.</p>
+                                <div class="cert-benefits">
+                                    <h6 class="text-primary mb-2">Key Benefits:</h6>
+                                    <ul class="list-unstyled text-muted mb-0">
+                                        <li>• Product safety assurance</li>
+                                        <li>• Sustainable production practices</li>
+                                        <li>• Regular testing and monitoring</li>
+                                        <li>• International recognition</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Trim Supplier Qualification -->
+                <div class="cert-card p-4 p-lg-5" data-aos="fade-up" data-aos-delay="300">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="cert-logo-wrapper bg-white p-3 rounded-3 d-flex align-items-center justify-content-center mx-auto">
+                                <img src="../assets/images/certificates/tqp1.png" alt="Trim Supplier Qualification" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="cert-content text-dark">
+                                <h3 class="fw-bold mb-2">Trim Supplier Qualification</h3>
+                                <p class="text-muted mb-2">Recognized for excellence in trim manufacturing</p>
+                                <p class="text-muted mb-4 opacity-75">Our trim manufacturing processes meet the highest industry standards, ensuring quality and consistency in every product.</p>
+                                <div class="cert-benefits">
+                                    <h6 class="text-primary mb-2">Key Benefits:</h6>
+                                    <ul class="list-unstyled text-muted mb-0">
+                                        <li>• Quality assurance</li>
+                                        <li>• Process standardization</li>
+                                        <li>• Industry recognition</li>
+                                        <li>• Customer confidence</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: GLOBAL RECYCLE STANDARD -->
+                <div class="cert-card p-4 p-lg-5" data-aos="fade-up" data-aos-delay="400">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="cert-logo-wrapper bg-white p-3 rounded-3 d-flex align-items-center justify-content-center mx-auto">
+                                <img src="../assets/images/certificates/3.webp" alt="GLOBAL RECYCLE STANDARD" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="cert-content text-dark">
+                                <h3 class="fw-bold mb-2">GLOBAL RECYCLE STANDARD</h3>
+                                <p class="text-muted mb-2">Certified for meeting the Global Recycle Standard</p>
+                                <p class="text-muted mb-4 opacity-75">This certification verifies our commitment to recycling and sustainable material usage in our production processes.</p>
+                                <div class="cert-benefits">
+                                    <h6 class="text-primary mb-2">Key Benefits:</h6>
+                                    <ul class="list-unstyled text-muted mb-0">
+                                        <li>• Recycling verification</li>
+                                        <li>• Sustainable materials</li>
+                                        <li>• Environmental impact reduction</li>
+                                        <li>• Circular economy support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: OKKO-TEX® -->
+                <div class="cert-card p-4 p-lg-5" data-aos="fade-up" data-aos-delay="500">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="cert-logo-wrapper bg-white p-3 rounded-3 d-flex align-items-center justify-content-center mx-auto">
+                                <img src="../assets/images/certificates/4.webp" alt="OKKO-TEX®" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="cert-content text-dark">
+                                <h3 class="fw-bold mb-2">OKKO-TEX®</h3>
+                                <p class="text-muted mb-2">Certified for sustainability with the OKEO-TEX</p>
+                                <p class="text-muted mb-4 opacity-75">Our OKKO-TEX® certification ensures sustainable and environmentally friendly production processes.</p>
+                                <div class="cert-benefits">
+                                    <h6 class="text-primary mb-2">Key Benefits:</h6>
+                                    <ul class="list-unstyled text-muted mb-0">
+                                        <li>• Sustainable production</li>
+                                        <li>• Environmental protection</li>
+                                        <li>• Resource efficiency</li>
+                                        <li>• Green manufacturing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Higgs Index -->
+                <div class="cert-card p-4 p-lg-5" data-aos="fade-up" data-aos-delay="600">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="cert-logo-wrapper bg-white p-3 rounded-3 d-flex align-items-center justify-content-center mx-auto">
+                                <img src="../assets/images/certificates/higgs.png" alt="Higgs Index" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="cert-content text-dark">
+                                <h3 class="fw-bold mb-2">Higgs Index</h3>
+                                <p class="text-muted mb-2">Certified for sustainability with the Higg Index</p>
+                                <p class="text-muted mb-4 opacity-75">The Higg Index certification measures and evaluates our environmental and social sustainability performance.</p>
+                                <div class="cert-benefits">
+                                    <h6 class="text-primary mb-2">Key Benefits:</h6>
+                                    <ul class="list-unstyled text-muted mb-0">
+                                        <li>• Sustainability measurement</li>
+                                        <li>• Performance tracking</li>
+                                        <li>• Continuous improvement</li>
+                                        <li>• Industry benchmarking</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-6 mb-7">
-            <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="200"
-              data-aos-duration="1000">
-              <a href="blog-detail.html"
-                class="resources-img resources-img-blog position-relative overflow-hidden d-block">
-                <img src="../assets/images/resources/resources-2.jpg" alt="resources" class="img-fluid">
-              </a>
-              <div class="resources-details">
-                <p class="mb-0">Dec 24, 2025</p>
-                <h4 class="mb-0">An breaking boundaries our latest brand redesign</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 mb-7">
-            <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="300"
-              data-aos-duration="1000">
-              <a href="blog-detail.html"
-                class="resources-img resources-img-blog position-relative overflow-hidden d-block">
-                <img src="../assets/images/resources/resources-3.jpg" alt="resources" class="img-fluid">
-              </a>
-              <div class="resources-details">
-                <p class="mb-0">Dec 24, 2025</p>
-                <h4 class="mb-0">Recognized for design</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 mb-7">
-            <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="400"
-              data-aos-duration="1000">
-              <a href="blog-detail.html"
-                class="resources-img resources-img-blog position-relative overflow-hidden d-block">
-                <img src="../assets/images/services/services-img-1.jpg" alt="resources" class="img-fluid">
-              </a>
-              <div class="resources-details">
-                <p class="mb-0">Dec 24, 2025</p>
-                <h4 class="mb-0">The Modern Lens Perspectives on Culture & Trends</h4>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+    </section>
+
+    <!-- Commitment Section -->
+    <section class="cert-commitment bg-light text-center py-5 py-xl-10">
+        <div class="container">
+            <h2 class="text-white mb-3" data-aos="fade-up">Our Commitment to Excellence</h2>
+            <p class="text-white mx-auto" style="max-width: 800px;" data-aos="fade-up" data-aos-delay="100">We continuously strive to maintain and improve our standards, ensuring that our products and processes meet the highest industry requirements while promoting sustainable and ethical practices throughout our operations.</p>
+        </div>
     </section>
 
   </div>
@@ -196,21 +299,33 @@
       <div class="row">
         <div class="col-xl-5 mb-8 mb-xl-0">
           <div class="d-flex flex-column gap-8 pe-xl-5">
-            <h2 class="mb-0 text-white">Build something together?</h2>
+            <h2 class="mb-0 text-white">Let's Work together?</h2>
             <div class="d-flex flex-column gap-2">
-              <a href="https://www.wrappixel.com/" target="_blank" class="link-hover hstack gap-3 text-white fs-5">
+              <a  target="_blank" class="link-hover hstack gap-3 text-white fs-5">
                 <iconify-icon icon="lucide:arrow-up-right" class="fs-7 text-primary"></iconify-icon>
-                info@wrappixel.com
+                info@adsonsent.com
               </a>
-              <a href="https://maps.app.goo.gl/hpDp81fqzGt5y4bC8" target="_blank"
-                class="link-hover hstack gap-3 text-white fs-5">
-                <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary"></iconify-icon>
-                info@wrappixel.com
-              </a>
+              <!-- Head Office -->
+              <div class="hstack gap-3 align-items-start">
+                <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary flex-shrink-0 mt-1"></iconify-icon>
+                <div>
+                  <strong class="text-white d-block mb-1">Head Office</strong>
+                  <span class="text-white text-opacity-70">193-VIP Block, Canal Park, Faisalabad</span>
+                </div>
+              </div>
+              <!-- Master Unit -->
+              <div class="hstack gap-3 align-items-start">
+                <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary flex-shrink-0 mt-1"></iconify-icon>
+                <div>
+                  <strong class="text-white d-block mb-1">Master Unit</strong>
+                  <span class="text-white text-opacity-70">Street No. 3, Yaseen Chowk, Jaranwala Road, Faisalabad</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+          <h5 class="text-white text-uppercase mb-4 ls-1">Menu</h5>
           <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
             <li><a class="link-hover fs-5 text-white" href="index.html">Home</a></li>
             <li><a class="link-hover fs-5 text-white" href="about-us.html">About</a></li>
@@ -218,22 +333,49 @@
             <li><a class="link-hover fs-5 text-white" href="projects.html">Work</a></li>
             <li><a class="link-hover fs-5 text-white" href="terms-and-conditions.html">Terms</a></li>
             <li><a class="link-hover fs-5 text-white" href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a class="link-hover fs-5 text-white" href="404.html">Error 404</a></li>
+           
           </ul>
         </div>
         <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+          <h5 class="text-white text-uppercase mb-4 ls-1">Products</h5>
           <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
-            <li><a class="link-hover fs-5 text-white" href="#!">Facebook</a></li>
-            <li><a class="link-hover fs-5 text-white" href="#!">Instagram</a></li>
-            <li><a class="link-hover fs-5 text-white" href="#!">Twitter</a></li>
+            <li>
+              <a class="link-hover fs-5 text-white d-inline-flex align-items-center" href="#!">
+                Elastics <span class="badge bg-primary ms-2">New</span>
+              </a>
+            </li>
+            <li><a class="link-hover fs-5 text-white" href="#!">Cords</a></li>
+            <li>
+              <a class="link-hover fs-5 text-white d-inline-flex align-items-center" href="#!">
+                Tapes <span class="badge bg-primary ms-2">New</span>
+              </a>
+            </li>
+            <li>
+              <a class="link-hover fs-5 text-white d-inline-flex align-items-center" href="#!">
+                Buttons <span class="badge bg-primary ms-2">New</span>
+              </a>
+            </li>
+            <li><a class="link-hover fs-5 text-white" href="#!">Fabric</a></li>
+            <li><a class="link-hover fs-5 text-white" href="#!">Labels</a></li>
+            <li><a class="link-hover fs-5 text-white" href="#!">Yarn</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-xl-3 mb-8 mb-xl-0">
-          <p class="mb-0 text-white text-opacity-70 text-md-end">© Studiova copyright 2025</p>
+          <p class="mb-0 text-white text-opacity-70 text-md-end">© 2026 ADSONS. All rights reserved</p>
+          <p class="mb-0 text-white text-opacity-70 text-md-end">Designed by <a href="https://zubbihawk.netlify.app/" target="_blank" class="link-hover text-white">Zaryab</a></p>
         </div>
       </div>
+      <div class="border-top border-white border-opacity-10 mt-9 pt-6 text-center">
+        <ul class="list-unstyled mb-0 d-flex flex-column gap-2 align-items-center">
+          <li class="text-white fs-5 fw-semibold">ADSONS GLOBAL PRIVATE LIMITED</li>
+          <li class="text-white fs-5 fw-semibold">ADSONS GLOBAL</li>
+          <li class="text-white fs-5 fw-semibold">ADSONS ENTERPRISES</li>
+          <li class="text-white fs-5 fw-semibold">AIMS INTERNATIONAL</li>
+        </ul>
+        <h3 class="mb-7 text-white fw-bold fs-12">ADSONS GROUP OF INDUSTRIES</h3>
+        
+      </div>
     </div>
-  <p class="mb-0 text-white text-opacity-70 text-md-center mt-10">Distributed by <a class="text-white" href="https://www.themewagon.com" target="_blank">ThemeWagon</a></p>
   </footer>
 
   <div class="get-template hstack gap-2">

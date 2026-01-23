@@ -14,15 +14,15 @@
 <body>
 
   <!-- Header -->
-  <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+  <header class="header header-light-page border-4 border-primary border-top position-fixed start-0 top-0 w-100">
     <div class="container">
       <div class="header-wrapper d-flex align-items-center justify-content-between">
         <div class="logo">
           <a href="index.html" class="logo-white">
-            <img src="../assets/images/logos/logo-white.svg" alt="logo" class="img-fluid">
+            <img src="../assets/images/logos/logo_blue.png" alt="logo" class="img-fluid">
           </a>
           <a href="index.html" class="logo-dark">
-            <img src="../assets/images/logos/logo-dark.svg" alt="logo" class="img-fluid">
+            <img src="../assets/images/logos/logo_light.png" alt="logo" class="img-fluid">
           </a>
         </div>
         <div class="d-flex align-items-center gap-4">
@@ -47,9 +47,14 @@
                           class="img-fluid animate-spin">Home</a>
                     </li>
                     <li class="header-item">
-                      <a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                      <a href="about.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
                           src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
                           class="img-fluid animate-spin">About</a>
+                    </li>
+                    <li class="header-item">
+                      <a href="certifications.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Certifications</a>
                     </li>
                     <li class="header-item">
                       <a href="projects.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
@@ -99,11 +104,20 @@
   </header>
 
   <!--  Page Wrapper -->
-  <div class="page-wrapper overflow-hidden">
+  <div class="page-wrapper overflow-hidden bg-white">
 
-    <!--  Banner Section -->
-    <section class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end"
-      style="background-image: url(../assets/images/backgrounds/projects-detail-banner.jpg);">
+    <!-- Hero -->
+    <!-- <section class="workflow-hero position-relative">
+        <div class="container position-relative z-2">
+            <h1 class="display-3 fw-bold text-white mb-4" data-aos="fade-up">Our Workflow</h1>
+            <p class="lead text-white-50 mx-auto" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="100">
+                From raw materials to final delivery, our commitment to excellence at every step.
+            </p>
+        </div>
+    </section> -->
+
+  <section class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end"
+      style="background-image: url(../assets/images/about/image.png);">
       <div class="container">
         <div class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1">
           <div class="row align-items-center">
@@ -111,13 +125,12 @@
               <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100"
                 data-aos-duration="1000">
                 <img src="../assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin">
-                <p class="mb-0 text-white fs-5 text-opacity-70">A <span class="text-primary">showcase of
-                    creativity</span>, strategy, and results explore the projects that define us.</p>
+                <p class="mb-0 text-white fs-5 text-opacity-70">From raw materials to final delivery, our commitment to excellence at every step.</p>
               </div>
             </div>
           </div>
           <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-            <h1 class="mb-0 fs-16 text-white lh-1">BioTrack LIMS</h1>
+            <h1 class="mb-0 fs-16 text-white lh-1">Workflow</h1>
             <a href="javascript:void(0)" class="p-1 ps-7 bg-primary rounded-pill">
               <span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center">
                 <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
@@ -128,76 +141,166 @@
       </div>
     </section>
 
-    <!--  Project Detail Section -->
-    <section class="project-detail py-5 py-lg-11 py-xl-12">
-      <div class="container">
-        <div class="d-flex flex-column gap-5 gap-xl-11">
-          <div class="d-flex flex-column gap-8">
-            <a href="projects.html" class="btn py-2 ps-3 pe-5" data-aos="fade-up" data-aos-delay="100"
-              data-aos-duration="1000">
-              <span class="btn-text pe-1">Back</span>
-              <iconify-icon icon="lucide:arrow-up-right"
-                class="btn-icon bg-white text-dark round-36 rounded-circle hstack justify-content-center fs-5 shadow-sm"></iconify-icon>
-            </a>
-            <div class="d-md-flex align-items-center gap-4 gap-lg-8" data-aos="fade-up" data-aos-delay="200"
-              data-aos-duration="1000">
-              <div class="d-flex flex-column gap-2 py-2 pe-4 pe-lg-8 border-end">
-                <p class="mb-0">Scope of work</p>
-                <p class="mb-0 text-dark fs-5 fw-medium">Brand identity, Digital design</p>
-              </div>
-              <div class="d-flex flex-column gap-2 py-2 pe-4 pe-lg-8 border-end">
-                <p class="mb-0">Industry</p>
-                <p class="mb-0 text-dark fs-5 fw-medium">Bags</p>
-              </div>
-              <div class="d-flex flex-column gap-2 py-2 pe-4 pe-lg-8 border-end">
-                <p class="mb-0">Raised</p>
-                <p class="mb-0 text-dark fs-5 fw-medium">$1.1M</p>
-              </div>
-              <div class="d-flex flex-column gap-2 py-2">
-                <p class="mb-0">Website</p>
-                <p class="mb-0 text-dark fs-5 fw-medium">www.studiova.com</p>
-              </div>
+    <!-- Timeline -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="timeline-line"></div>
+            
+            <!-- Step 1 -->
+            <div class="timeline-row" data-aos="fade-up">
+                <div class="timeline-image">
+                    <img src="../assets/images/services/12.jpg" alt="Raw Material" class="img-fluid">
+                </div>
+                <div class="timeline-badge">1</div>
+                <div class="timeline-content">
+                    <h3 class="text-dark mb-3">Raw Material Selection</h3>
+                    <p class="text-muted">We meticulously select high-quality raw materials that meet our strict standards.</p>
+                    <ul class="timeline-list">
+                        <li><iconify-icon icon="lucide:check-circle"></iconify-icon> Quality inspection of incoming materials</li>
+                        <li><iconify-icon icon="lucide:check-circle"></iconify-icon> Material testing and verification</li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="row gap-4 gap-lg-0">
-            <div class="col-lg-4">
-              <h2 class="fs-13 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Description
-              </h2>
+
+            <!-- Step 2 -->
+            <div class="timeline-row" data-aos="fade-up">
+                <div class="timeline-image">
+                    <div class="owl-carousel workflow-carousel owl-theme">
+                        <div class="item">
+                            <img src="../assets/images/services/18.jpg" alt="Production 1" class="img-fluid rounded-4">
+                        </div>
+                        <div class="item">
+                            <img src="../assets/images/services/7.jpeg" alt="Production 2" class="img-fluid rounded-4">
+                        </div>
+                        <div class="item">
+                            <img src="../assets/images/services/20.jpeg" alt="Production 3" class="img-fluid rounded-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-badge">2</div>
+                <div class="timeline-content">
+                    <h3 class="text-dark mb-3">Production Process</h3>
+                    <p class="text-muted">State-of-the-art manufacturing with precision and care.</p>
+                    <ul class="timeline-list">
+                        <li><iconify-icon icon="lucide:check-circle"></iconify-icon> Automated production lines</li>
+                        <li><iconify-icon icon="lucide:check-circle"></iconify-icon> Real-time monitoring</li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-lg-8">
-              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                <p class="fs-5 mb-6">
-                  exploring the world of handbags reveals a diverse array of blogs catering to various styles, trends,
-                  and fashion insights. Here are some notable handbag blogs you might find engaging:
-                </p>
-                <h4>1. PurseBlog</h4>
-                <p class="fs-5 mb-6">
-                  PurseBlog offers daily editorial content focusing on designer handbag news, reviews, and features.
-                  They cover the latest collections from both luxury and contemporary designers, providing readers with
-                  in-depth analyses and insights into the handbag industry.
-                </p>
-                <h4>2. The MyBag Blog</h4>
-                <p class="fs-5 mb-0">
-                  The MyBag Blog is a hub for designer handbag inspiration, trends, and style guides. Packed with the
-                  latest trends, blogger styles, and, of course, handbags, it serves as a valuable resource for fashion
-                  enthusiasts seeking to stay updated on current styles.
-                </p>
-              </div>
+
+            <!-- Step 3: Quality Assurance -->
+            <div class="timeline-row" data-aos="fade-up">
+                <div class="timeline-image">
+                    <img src="../assets/images/services/16.jpg" alt="Quality Assurance" class="img-fluid">
+                </div>
+                <div class="timeline-badge">3</div>
+                <div class="timeline-content">
+                    <h3 class="text-dark mb-3">Quality Assurance</h3>
+                    <p class="text-muted">Rigorous testing and quality control at every stage.</p>
+                    <ul class="timeline-list">
+                        <li><iconify-icon icon="lucide:check-circle"></iconify-icon> Comprehensive testing procedures</li>
+                        <li><iconify-icon icon="lucide:check-circle"></iconify-icon> Durability assessment</li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-12 mb-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-              <img src="../assets/images/portfolio/portfolio-img-4.jpg" alt="services" class="w-100 object-fit-cover">
+
+            <!-- Step 4: Packaging -->
+             <div class="timeline-row" data-aos="fade-up">
+                <div class="timeline-image">
+                    <img src="../assets/images/services/14.jpg" alt="Packaging" class="img-fluid">
+                </div>
+                <div class="timeline-badge">4</div>
+                <div class="timeline-content">
+                    <h3 class="text-dark mb-3">Packaging</h3>
+                    <p class="text-muted">Secure and sustainable packaging solutions.</p>
+                    <ul class="timeline-list">
+                        <li><iconify-icon icon="lucide:check-circle"></iconify-icon> Eco-friendly materials</li>
+                        <li><iconify-icon icon="lucide:check-circle"></iconify-icon> Custom packaging solutions</li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-lg-6 mb-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-              <img src="../assets/images/portfolio/portfolio-img-2.jpg" alt="services" class="w-100 object-fit-cover">
+
+            <!-- Step 5: Metal Detection -->
+             <div class="timeline-row" data-aos="fade-up">
+                <div class="timeline-image">
+                    <img src="../assets/images/services/md.jpeg" alt="Metal Detection" class="img-fluid">
+                </div>
+                <div class="timeline-badge">5</div>
+                <div class="timeline-content">
+                    <h3 class="text-dark mb-3">Metal Detection</h3>
+                    <p class="text-muted">Advanced detection ensuring safety and compliance.</p>
+                    <ul class="timeline-list">
+                        <li><iconify-icon icon="lucide:check-circle"></iconify-icon> High-sensitivity detection</li>
+                        <li><iconify-icon icon="lucide:check-circle"></iconify-icon> Safety compliance verification</li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-lg-6 mb-7" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-              <img src="../assets/images/portfolio/portfolio-img-3.jpg" alt="services" class="w-100 object-fit-cover">
+
+            <!-- Step 6: Final Inspection -->
+             <div class="timeline-row" data-aos="fade-up">
+                <div class="timeline-image">
+                    <img src="../assets/images/services/final_inspection.png" alt="Final Inspection" class="img-fluid">
+                </div>
+                <div class="timeline-badge">6</div>
+                <div class="timeline-content">
+                    <h3 class="text-dark mb-3">Final Inspection</h3>
+                    <p class="text-muted">Thorough final check before shipping.</p>
+                    <ul class="timeline-list">
+                        <li><iconify-icon icon="lucide:check-circle"></iconify-icon> Final visual check</li>
+                        <li><iconify-icon icon="lucide:check-circle"></iconify-icon> Order accuracy verification</li>
+                    </ul>
+                </div>
             </div>
-          </div>
+
+            <!-- Step 7: Shipping -->
+             <div class="timeline-row" data-aos="fade-up">
+                <div class="timeline-image">
+                    <img src="../assets/images/services/19.png" alt="Shipping" class="img-fluid">
+                </div>
+                <div class="timeline-badge">7</div>
+                <div class="timeline-content">
+                    <h3 class="text-dark mb-3">Shipping & Delivery</h3>
+                    <p class="text-muted">Efficient logistics and on-time delivery.</p>
+                    <ul class="timeline-list">
+                        <li><iconify-icon icon="lucide:check-circle"></iconify-icon> Global shipping network</li>
+                        <li><iconify-icon icon="lucide:check-circle"></iconify-icon> Secure transportation</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="quality-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="text-dark mb-3">Our Quality Commitment</h2>
+                <div class="d-flex justify-content-center">
+                    <p class="text-muted" style="max-width: 800px;">Every step in our workflow is designed to ensure the highest quality standards. From the selection of raw materials to the final delivery, we maintain rigorous quality control processes to guarantee excellence in every product.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="stat-number">99.9%</div>
+                        <div class="text-dark">Quality Assurance Rate</div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="text-dark">Production Monitoring</div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <div class="stat-number">48h</div>
+                        <div class="text-dark">Average Delivery Time</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
   </div>
@@ -207,21 +310,33 @@
       <div class="row">
         <div class="col-xl-5 mb-8 mb-xl-0">
           <div class="d-flex flex-column gap-8 pe-xl-5">
-            <h2 class="mb-0 text-white">Build something together?</h2>
+            <h2 class="mb-0 text-white">Let's Work together?</h2>
             <div class="d-flex flex-column gap-2">
-              <a href="https://www.wrappixel.com/" target="_blank" class="link-hover hstack gap-3 text-white fs-5">
+              <a  target="_blank" class="link-hover hstack gap-3 text-white fs-5">
                 <iconify-icon icon="lucide:arrow-up-right" class="fs-7 text-primary"></iconify-icon>
-                info@wrappixel.com
+                info@adsonsent.com
               </a>
-              <a href="https://maps.app.goo.gl/hpDp81fqzGt5y4bC8" target="_blank"
-                class="link-hover hstack gap-3 text-white fs-5">
-                <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary"></iconify-icon>
-                info@wrappixel.com
-              </a>
+              <!-- Head Office -->
+              <div class="hstack gap-3 align-items-start">
+                <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary flex-shrink-0 mt-1"></iconify-icon>
+                <div>
+                  <strong class="text-white d-block mb-1">Head Office</strong>
+                  <span class="text-white text-opacity-70">193-VIP Block, Canal Park, Faisalabad</span>
+                </div>
+              </div>
+              <!-- Master Unit -->
+              <div class="hstack gap-3 align-items-start">
+                <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary flex-shrink-0 mt-1"></iconify-icon>
+                <div>
+                  <strong class="text-white d-block mb-1">Master Unit</strong>
+                  <span class="text-white text-opacity-70">Street No. 3, Yaseen Chowk, Jaranwala Road, Faisalabad</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+          <h5 class="text-white text-uppercase mb-4 ls-1">Menu</h5>
           <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
             <li><a class="link-hover fs-5 text-white" href="index.html">Home</a></li>
             <li><a class="link-hover fs-5 text-white" href="about-us.html">About</a></li>
@@ -229,22 +344,49 @@
             <li><a class="link-hover fs-5 text-white" href="projects.html">Work</a></li>
             <li><a class="link-hover fs-5 text-white" href="terms-and-conditions.html">Terms</a></li>
             <li><a class="link-hover fs-5 text-white" href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a class="link-hover fs-5 text-white" href="404.html">Error 404</a></li>
+           
           </ul>
         </div>
         <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+          <h5 class="text-white text-uppercase mb-4 ls-1">Products</h5>
           <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
-            <li><a class="link-hover fs-5 text-white" href="#!">Facebook</a></li>
-            <li><a class="link-hover fs-5 text-white" href="#!">Instagram</a></li>
-            <li><a class="link-hover fs-5 text-white" href="#!">Twitter</a></li>
+            <li>
+              <a class="link-hover fs-5 text-white d-inline-flex align-items-center" href="#!">
+                Elastics <span class="badge bg-primary ms-2">New</span>
+              </a>
+            </li>
+            <li><a class="link-hover fs-5 text-white" href="#!">Cords</a></li>
+            <li>
+              <a class="link-hover fs-5 text-white d-inline-flex align-items-center" href="#!">
+                Tapes <span class="badge bg-primary ms-2">New</span>
+              </a>
+            </li>
+            <li>
+              <a class="link-hover fs-5 text-white d-inline-flex align-items-center" href="#!">
+                Buttons <span class="badge bg-primary ms-2">New</span>
+              </a>
+            </li>
+            <li><a class="link-hover fs-5 text-white" href="#!">Fabric</a></li>
+            <li><a class="link-hover fs-5 text-white" href="#!">Labels</a></li>
+            <li><a class="link-hover fs-5 text-white" href="#!">Yarn</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-xl-3 mb-8 mb-xl-0">
-          <p class="mb-0 text-white text-opacity-70 text-md-end">© Studiova copyright 2025</p>
+          <p class="mb-0 text-white text-opacity-70 text-md-end">© 2026 ADSONS. All rights reserved</p>
+          <p class="mb-0 text-white text-opacity-70 text-md-end">Designed by <a href="https://zubbihawk.netlify.app/" target="_blank" class="link-hover text-white">Zaryab</a></p>
         </div>
       </div>
+      <div class="border-top border-white border-opacity-10 mt-9 pt-6 text-center">
+        <ul class="list-unstyled mb-0 d-flex flex-column gap-2 align-items-center">
+          <li class="text-white fs-5 fw-semibold">ADSONS GLOBAL PRIVATE LIMITED</li>
+          <li class="text-white fs-5 fw-semibold">ADSONS GLOBAL</li>
+          <li class="text-white fs-5 fw-semibold">ADSONS ENTERPRISES</li>
+          <li class="text-white fs-5 fw-semibold">AIMS INTERNATIONAL</li>
+        </ul>
+        <h3 class="mb-7 text-white fw-bold fs-12">ADSONS GROUP OF INDUSTRIES</h3>
+        
+      </div>
     </div>
-  <p class="mb-0 text-white text-opacity-70 text-md-center mt-10">Distributed by <a class="text-white" href="https://www.themewagon.com" target="_blank">ThemeWagon</a></p>
   </footer>
 
   <div class="get-template hstack gap-2">
@@ -255,6 +397,8 @@
     </button>
   </div>
 
+  
+
 
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -263,6 +407,21 @@
   <script src="../assets/js/custom.js"></script>
   <!-- solar icons -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $(".workflow-carousel").owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            nav: false,
+            dots: true,
+            animateOut: 'fadeOut'
+        });
+    });
+  </script>
 </body>
 
 </html>

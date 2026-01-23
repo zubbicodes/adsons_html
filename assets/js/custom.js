@@ -79,3 +79,35 @@ $(function () {
 
 });
 
+// Event Gallery Toggle Function
+function toggleGallery(galleryId, btn) {
+    const gallery = document.getElementById(galleryId);
+    const btnText = btn.querySelector('.btn-text');
+    const icon = btn.querySelector('.icon-toggle');
+
+    if (gallery.classList.contains('d-none')) {
+        // Show gallery
+        gallery.classList.remove('d-none');
+        gallery.classList.add('d-block');
+        gallery.classList.add('animate__animated', 'animate__fadeIn'); // Optional animation class
+        
+        // Update button
+        btnText.textContent = "Hide Gallery";
+        icon.setAttribute('icon', 'lucide:chevron-up');
+        
+        // Update class to indicate active state (optional)
+        btn.classList.add('active');
+    } else {
+        // Hide gallery
+        gallery.classList.remove('d-block');
+        gallery.classList.add('d-none');
+        
+        // Update button
+        btnText.textContent = "Show Gallery";
+        icon.setAttribute('icon', 'lucide:chevron-down');
+        
+        // Remove active state
+        btn.classList.remove('active');
+    }
+}
+
