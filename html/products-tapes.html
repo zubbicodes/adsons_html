@@ -14,9 +14,27 @@
   <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    .essential-card {
+      height: 100%;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .essential-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .essential-card-img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
 
-<body>
+<body class="bg-white">
 
   <!-- Header -->
   <div id="header-placeholder" data-header-class="header-light-page"></div>
@@ -34,13 +52,12 @@
               <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100"
                 data-aos-duration="1000">
                 <img src="../assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin">
-                <p class="mb-0 text-white fs-5 text-opacity-70">A <span class="text-primary">showcase of
-                    creativity</span>, strategy, and results explore the projects that define us.</p>
+                <p class="mb-0 text-white fs-5 text-opacity-70"> <span class="text-primary">Innovative, durable, </span> and customizable cords and webbing for every application.</p>
               </div>
             </div>
           </div>
           <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-            <h1 class="mb-0 fs-16 text-white lh-1">Woven Tapes</h1>
+            <h1 class="mb-0 fs-16 text-white lh-1">Tapes & Webbing</h1>
             <a href="javascript:void(0)" class="p-1 ps-7 bg-primary rounded-pill">
               <span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center">
                 <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
@@ -51,63 +68,75 @@
       </div>
     </section>
 
-    <!--  Project Detail Section -->
-    <section class="project-detail py-5 py-lg-11 py-xl-12">
+    
+
+    <!-- Feature Section -->
+    <section class="py-5 py-lg-10 bg-white">
       <div class="container">
-        <div class="d-flex flex-column gap-5 gap-xl-11">
-          <div class="d-flex flex-column gap-8">
-            <a href="products.html" class="btn py-2 ps-3 pe-5" data-aos="fade-up" data-aos-delay="100"
-              data-aos-duration="1000">
-              <span class="btn-text pe-1">Back</span>
-              <iconify-icon icon="lucide:arrow-up-right"
-                class="btn-icon bg-white text-dark round-36 rounded-circle hstack justify-content-center fs-5 shadow-sm"></iconify-icon>
-            </a>
-            <div class="d-md-flex align-items-center gap-4 gap-lg-8" data-aos="fade-up" data-aos-delay="200"
-              data-aos-duration="1000">
-              <div class="d-flex flex-column gap-2 py-2 pe-4 pe-lg-8 border-end">
-                <p class="mb-0">Product Type</p>
-                <p class="mb-0 text-dark fs-5 fw-medium">Woven & Braided Tapes</p>
+        <div class="row align-items-center gx-lg-5">
+          <div class="col-lg-6 mb-4 mb-lg-0 order-lg-2" data-aos="fade-left" data-aos-duration="1000">
+            <img src="../assets/images/products/tapes/1.jpg" alt="Feature" class="img-fluid rounded shadow-sm w-100 object-fit-cover" style="height: 400px;">
+          </div>
+          <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="fw-bold mb-4 text-uppercase">Feature</h2>
+            <ul class="list-unstyled text-dark text-opacity-75 fs-5 d-flex flex-column gap-3">
+              <li class="d-flex gap-2">
+                <span class="text-primary">•</span>
+                <span>This webbing was made with fine gloss color yarn. Various yarns can be woven/printed with various pattern types such as rainbow, grid, gradient, or reflective yarn to present enhanced multi-color, surface texture, and unique effects.</span>
+              </li>
+              <li class="d-flex gap-2">
+                <span class="text-primary">•</span>
+                <span>ADSONS webbing produced by eco-friendly dyeing offers vibrant color for every method.</span>
+              </li>
+              <li class="d-flex gap-2">
+                <span class="text-primary">•</span>
+                <span>Webbing with spring joint processes for softness & tenacious flexibility and suitable for footwear, garments, sportswear, underseat bag & accessories.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Essentials Section -->
+    <section class="py-5 py-lg-10 bg-white">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5 text-uppercase">The Essentials</h2>
+        <div class="row gy-4">
+          
+          <!-- Card 1 -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="essential-card d-flex flex-column bg-white">
+              <div class="p-4 flex-grow-1">
+                <h4 class="fw-bold mb-3">Woven Tape</h4>
+                <p class="text-dark text-opacity-75 mb-0">Customization and integration of over 8 yarn types to create various textile & pattern and unique quality.</p>
               </div>
-              <div class="d-flex flex-column gap-2 py-2 pe-4 pe-lg-8 border-end">
-                <p class="mb-0">Material</p>
-                <p class="mb-0 text-dark fs-5 fw-medium">Cotton, Polyester, Nylon</p>
-              </div>
-              <div class="d-flex flex-column gap-2 py-2 pe-4 pe-lg-8 border-end">
-                <p class="mb-0">Feature</p>
-                <p class="mb-0 text-dark fs-5 fw-medium">Customizable</p>
-              </div>
-              <div class="d-flex flex-column gap-2 py-2">
-                <p class="mb-0">Usage</p>
-                <p class="mb-0 text-dark fs-5 fw-medium">Garments, Accessories</p>
-              </div>
+              <img src="../assets/images/products/tapes/2.jpg" alt="Woven Tape" class="essential-card-img">
             </div>
           </div>
-          <div class="row gap-4 gap-lg-0">
-            <div class="col-lg-4">
-              <h2 class="fs-13 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Description
-              </h2>
-            </div>
-            <div class="col-lg-8">
-              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                <p class="fs-5 mb-6">
-                  We offer a wide variety of tapes, including woven, knitted, and braided options. Our tapes are available in various patterns, textures, and eco-friendly dyed yarns to meet your specific design requirements.
-                </p>
-                <h4>1. Woven Tapes</h4>
-                <p class="fs-5 mb-6">
-                  Durable and versatile, our woven tapes are perfect for reinforcing seams, binding edges, or adding decorative accents to garments.
-                </p>
-                <h4>2. Braided Tapes</h4>
-                <p class="fs-5 mb-0">
-                  Our braided tapes offer a unique texture and appearance, making them ideal for drawstrings, decorative trims, and other creative applications.
-                </p>
+
+          <!-- Card 2 -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="essential-card d-flex flex-column bg-white">
+              <div class="p-4 flex-grow-1">
+                <h4 class="fw-bold mb-3">Thick & Thin Knit Tape</h4>
+                <p class="text-dark text-opacity-75 mb-0">Soft, light, and flexible with various textile patterns and highly textile structure.</p>
               </div>
+              <img src="../assets/images/products/tapes/3.jpg" alt="Thick & Thin Knit Tape" class="essential-card-img">
             </div>
           </div>
-          <div class="row">
-            <div class="col-12 mb-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-              <img src="../assets/images/portfolio/portfolio-img-4.jpg" alt="services" class="w-100 object-fit-cover">
+
+          <!-- Card 3 -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="essential-card d-flex flex-column bg-white">
+              <div class="p-4 flex-grow-1">
+                <h4 class="fw-bold mb-3">Braided Tape</h4>
+                <p class="text-dark text-opacity-75 mb-0">Silky & cross piping structure utilized with several uniform yarns to present slight grip, resistance structure for piping and edge tape.</p>
+              </div>
+              <img src="../assets/images/products/tapes/4.jpg" alt="Braided Tape" class="essential-card-img">
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -119,7 +148,6 @@
   <!-- Footer End -->
 
   <div class="get-template hstack gap-2">
-    
     <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
       id="scrollToTopBtn">
       <iconify-icon icon="lucide:arrow-up" class="fs-7 text-dark"></iconify-icon>
