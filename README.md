@@ -43,7 +43,7 @@ ADSONS Global is a comprehensive website showcasing the products, manufacturing 
 └── index.html          # Root redirect file
 ```
 
-## Getting Started HERE
+## Getting Started
 
 To view the project locally:
 
